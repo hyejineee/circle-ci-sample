@@ -10,6 +10,8 @@ jobs:
     steps:
       - checkout
       
+      # yml : json의 확장 버전. json에서 {}뺴고 주석 사용할 수 있다. 
+      # 캐시전략 : node_module을 매번 설치하지 않고 캐싱해서 사용한다. 
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
