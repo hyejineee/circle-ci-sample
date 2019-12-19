@@ -1,5 +1,5 @@
 const sum = (a,b)=>{
-    return 7;
+    return a+b;
 };   
 
 test(`sum`,()=>{
